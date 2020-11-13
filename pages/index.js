@@ -1,8 +1,8 @@
 import React from "react";
-import Input from "../src/input.js";
+import DataList from "../src/dataList.js";
 
 const App = () => {
-    return <Input/>
+    return < DataList />
 };
 
 export default App;
