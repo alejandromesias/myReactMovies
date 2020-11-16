@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const DataList = () => {
-    const [data, setData] = useState();
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         const fetchData = async function() {
@@ -16,9 +16,7 @@ const DataList = () => {
 
     return (
         <ul>
-          {data === undefined ? 
-            <p>nodata</p> 
-          : data.map(item => (
+          {data.map(item => (
             <li key={item.id}>
               <p>{item.title}</p>
             </li>
